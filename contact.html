@@ -3,11 +3,60 @@
 <link rel="stylesheet" href="styles/styles.css">
 <head>
     <title>Bells and Whistles Band</title>
+    <style type="text/css">
+        label {width: 150px; display:inline-block; font-family: "Zalando Sans", sans-serif;}
+        .field {margin-bottom: 15px}
+        input[type='submit'] {margin: 0; font-family: "Zalando Sans", sans-serif;}
+        input[type='submit']:hover {background-color: #cb2b2b; color: #fff}
+        form {display: grid; place-items: center;}
+        .form-header {display: grid; place-items: center;}
+        h1 {margin-bottom: 0}
+        form div p {margin-top: 0; margin-bottom: 30px;}
+    </style>
 </head>
 <body>
     <header>
         <script src="components/header.js"></script>
     </header>
+    <form method="get"  action="#">
+        <div name="form-header" class="form-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you regarding your next big day!</p>
+        </div>
+        <div class="field">
+            <label>Name</label><input type="text" name="name-input">
+        </div>
+        <div class="field">
+            <label>Email</label><input type="text" name="email-input">
+        </div>
+        <div class="field">
+            <label>Phone Number</label><input type="text" name="phone-input">
+        </div>
+        <div class="field">
+            <label style="width: 190px">Anticipated Event Date</label>
+            <select>
+                <option value="spring-26">Spring 2026</option>
+                <option value="summer-26">Summer 2026</option>
+                <option value="fall-26">Fall 2026</option>
+                <option value="winter-26">Winter 2026</option>
+                <option value="spring-27">Spring 2027</option>
+                <option value="summer-27">Summer 2027</option>
+                <option value="fall-27">Fall 2027</option>
+                <option value="winter-27">Winter 2027</option>
+                <option value="unsure">Still Deciding</option>
+            </select>
+        </div>
+        <div class="field">
+            <label style="width: 190px">Would you like to be added to our newsletter?</label>
+            <label style="width: 50px">
+                <input type="radio" name="newsletter" value="yes" style="font-family: 'Zalando Sans', sans-serif;">Yes
+            </label>
+            <label style="width: 50px">
+                <input type="radio" name="newsletter" value="no">No
+            </label>
+        </div>
+        <input type="submit">
+    </form>
 </body>
 <script src="components/footer.js"></script>
 </html>
