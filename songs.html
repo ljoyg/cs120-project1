@@ -3,11 +3,68 @@
 <link rel="stylesheet" href="styles/styles.css">
 <head>
     <title>Bells and Whistles Band</title>
+    <style>
+        .banner {
+            height: 200px
+        }
+        .banner .banner-text {
+            display: inline-block;
+            width: 100%;
+        }
+        table {
+            text-align: center;
+            margin: 20px;
+        }
+        th, td {
+            font-family: "Zalando Sans", sans-serif;
+            align-self: center;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
         <script src="components/header.js"></script>
     </header>
+    <div name="banner" class="banner">
+        <div name="banner-text" class="banner-text">
+            <h1 name="banner-title">Greatest Hits</h1>
+            <p>Check out our arrangements of some of your favorite songs!</p>
+        </div>
+    </div>
+    <br/>
+    <table name="song-table">
+        <tr>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th>Clip</th>
+        </tr>
+        <tr>
+            <td>September</td>
+            <td>Earth, Wind, and Fire</td>
+            <td>1978</td>
+            <td><iframe src="https://www.youtube.com/embed/Gs069dndIYk?si=i3ShQlzs3TkySt7C" title="YouTube video player" referrerpolicy='strict-origin-when-cross-origin'></iframe></td>
+        </tr>
+        <tr>
+            <td>Mr. Brightside</td>
+            <td>The Killers</td>
+            <td>2004</td>
+            <td><iframe src="https://www.youtube.com/embed/gGdGFtwCNBE?si=gEZdOSnmAe-C3tZc" title="YouTube video player" referrerpolicy='strict-origin-when-cross-origin'></iframe></td>
+        </tr>
+        <tr>
+            <td>Dancing Queen</td>
+            <td>ABBA</td>
+            <td>1976</td>
+            <td><iframe src="https://www.youtube.com/embed/xFrGuyw1V8s?si=T-y5w5VW-Vkcks6m" title="YouTube video player" referrerpolicy='strict-origin-when-cross-origin'></iframe></td>
+        </tr>
+        <tr>
+            <td>Pink Pony Club</td>
+            <td>Chappell Roan</td>
+            <td>2023</td>
+            <td><iframe src="https://www.youtube.com/embed/GR3Liudev18?si=cMaXNgai18uyCO5f" title="YouTube video player" referrerpolicy='strict-origin-when-cross-origin'></iframe></td>
+        </tr>
+    </table>
 </body>
 <script src="components/footer.js"></script>
 </html>
