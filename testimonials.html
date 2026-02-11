@@ -5,12 +5,50 @@
     <title>Bells and Whistles Band</title>
     <style>
         .banner {
-            height: 200px
+            height: 200px;
         }
         .banner .banner-text {
             display: inline-block;
             width: 100%;
         }
+
+        .review {
+            display: flex;
+            height: 300px;
+            margin: 20px;
+            align-items: center;
+        }
+
+        #review1 .picture {
+            background-image: url("images/review1.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 100%;
+            width: 45%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #review2 .picture {
+            background-image: url("images/review2.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 100%;
+            width: 50%;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .review .review-text {
+            display: inline-block;
+            max-width: 45%;
+            text-align: center;
+            height: 100%;
+        }
+
+
     </style>
 </head>
 <body>
@@ -22,6 +60,20 @@
             <h1 name="banner-title">Testimonials</h1>
             <p>Hear from previous happy couples who celebrated their special days with us!</p>
         </div>
+    </div>
+    <div name="review1" id="review1" class="review">
+        <div name="picture1" class="picture"></div>
+        <div name="review1-text" class="review-text">
+            <h2>Jake and Julia</h2>
+            <p>"We loved having Bells and Whistles as our wedding band! They kept all of our guests up and on their feet with their setlist, and they even included our favorite song that we requested. We have some friends getting married next year, and we already convinced them to book Bells and Whistles after how much fun they had at our reception!"</p>
+        </div>
+    </div>
+    <div name="review2" id="review2" class="review">
+        <div name="review2-text" class="review-text" style="padding-left: 100px">
+            <h2>Becky and Noah</h2>
+            <p>"It was important to us to have live music for our wedding, and Bells and Whistles did not disappoint. The entire team was so professional, and made sure that the music and MCing worked smoothly throughout our entire day. Would definitely recommend to anyone looking for a professional, high-quality wedding band!"</p>
+        </div>
+        <div name="picture2" class="picture"></div>
     </div>
 </body>
 <script src="components/footer.js"></script>
